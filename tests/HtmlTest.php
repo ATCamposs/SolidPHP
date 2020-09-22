@@ -8,6 +8,9 @@ class HtmlTest extends TestCase
 {
     public function testFirstExample()
     {
-        $this->assertTrue(true);
+        $html = new Html;
+        $img = $html->img('images/photo.jpg');
+        
+        $this->assertEquals('<img src="images/photo.jpg">', $img);
     }
 }
