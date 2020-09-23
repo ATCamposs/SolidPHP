@@ -5,11 +5,15 @@ I
 D
 
 
+
+
 Single responsability
 
 
 Um metodo jamais deve ter mais de um fim ou proposito
 ex: um objeto não deve armazenar registros E salvar OU imprimir estes dados, esses metodos devem ser passados para outros objetos.(de uma maneira mais pratica podemos dizer metodos no lugar de objetos/classes).
+
+
 
 
 Open Closed
@@ -23,6 +27,8 @@ ou padrão Template Method(Abstract)
 um exemplo pode ser visto na pasta connection e arquivo Conexao.php
 
 
+
+
 Liskov Substituition
 
 
@@ -32,12 +38,16 @@ Um quadrado é um tipo de retângulo, mas não pode ser substituido pelo retâng
 Um exemplo que não está seguindo o principio de liskov é o do Area.php, um quadrado e retangulo trazem informações diferentes entre si que não podem ser utilizadas para o mesmo fim.
 
 
+
+
 Interface Segregation Principle
 
 
 Nenhum cliente deve ser forçado a depender de métodos que não use.
 Podemos e devemos criar interfaces menores e mais simples, mesmo que com métodos duplicados.
 Exemplo de codigo pode ser visto na pasta passaros, onde mais de uma interface foi criada para evitar a criação de metodos vazios.
+
+
 
 
 Dependency Inversion
