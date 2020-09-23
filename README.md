@@ -6,11 +6,15 @@ D
 
 
 Single responsability
+
+
 Um metodo jamais deve ter mais de um fim ou proposito
 ex: um objeto não deve armazenar registros E salvar OU imprimir estes dados, esses metodos devem ser passados para outros objetos.(de uma maneira mais pratica podemos dizer metodos no lugar de objetos/classes).
 
 
 Open Closed
+
+
 open closed principle aplicado, as entidades estão abertas para extensão mas fechadas para modificação.
 Uma classe não deve depender da outra.
 podendo usar interfaces e classes abstratas para definir um tipo
@@ -20,6 +24,8 @@ um exemplo pode ser visto na pasta connection e arquivo Conexao.php
 
 
 Liskov Substituition
+
+
 Subtipos devem ser substituiveis por seus tipos base.
 Um quadrado é um tipo de retângulo, mas não pode ser substituido pelo retângulo, ele quebra o principio de liskov.
 
@@ -27,13 +33,16 @@ Um exemplo que não está seguindo o principio de liskov é o do Area.php, um qu
 
 
 Interface Segregation Principle
+
+
 Nenhum cliente deve ser forçado a depender de métodos que não use.
 Podemos e devemos criar interfaces menores e mais simples, mesmo que com métodos duplicados.
 Exemplo de codigo pode ser visto na pasta passaros, onde mais de uma interface foi criada para evitar a criação de metodos vazios.
 
 
-
 Dependency Inversion
+
+
 Modulos de alto nivel não deveriam depender de modulos de baixo nivel. Ambos deveriam depender de abstrações.
 Abstrações não podem depender de detalhes, detalhes devem ser abstrações.
 
